@@ -20,11 +20,23 @@
         ```json
         // task.json
         "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+            "-fdiagnostics-color=always",
+            "-g",
+            "${file}",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        ],
+        ```
+    - Multiple ".h" and ".c" files in same path.
+        ```json
+        // task.json
+        "args": [
+            "-fdiagnostics-color=always",
+            "-g",
+            "${workspaceFolder}\\*.h",
+            "${workspaceFolder}\\*.c",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe"
         ],
         ```
 
