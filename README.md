@@ -18,7 +18,7 @@
     - Need to add "task.json" in ".vscode" folder
     - Only "main.c" file
         ```json
-        // task.json
+        # task.json
         "args": [
             "-fdiagnostics-color=always",
             "-g",
@@ -29,7 +29,7 @@
         ```
     - Multiple ".h" and ".c" files in same path.
         ```json
-        // task.json
+        # task.json
         "args": [
             "-fdiagnostics-color=always",
             "-g",
