@@ -16,6 +16,18 @@
 ## Methods of run C code in VSCode
 1. Run C/C++ File (VSCode Extension : C/C++)
     - Need to add "task.json" in ".vscode" folder
+    - Only "main.c" file
+        ```json
+        // task.json
+        "args": [
+                "-fdiagnostics-color=always",
+                "-g",
+                "${file}",
+                "-o",
+                "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        ],
+        ```
+
 2. Run Code (Code Runner)
     - Need to add "settings.json" in ".vscode" folder
 
