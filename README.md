@@ -39,6 +39,19 @@
             "${fileDirname}\\${fileBasenameNoExtension}.exe"
         ],
         ```
+    - Multiple ".h" and ".c" files in different path.
+        ```json
+        # task.json
+        "args": [
+            "-fdiagnostics-color=always",
+            "-g",
+            "${workspaceFolder}\\include\\*.h",
+            "${workspaceFolder}\\src\\*.c",
+            "${workspaceFolder}\\*.c",
+            "-o",
+            "${fileDirname}\\${fileBasenameNoExtension}.exe"
+        ],
+        ```
 
 2. Run Code (Code Runner)
     - Need to add "settings.json" in ".vscode" folder

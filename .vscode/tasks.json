@@ -7,7 +7,8 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}\\*.h",
+                "${workspaceFolder}\\include\\*.h",
+                "${workspaceFolder}\\src\\*.c",
                 "${workspaceFolder}\\*.c",
                 "-o",
                 "${fileDirname}\\${fileBasenameNoExtension}.exe"
