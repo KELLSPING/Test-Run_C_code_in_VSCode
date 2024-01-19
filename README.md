@@ -18,3 +18,7 @@
     - Need to add "task.json" in ".vscode" folder
 2. Run Code (Code Runner)
     - Need to add "settings.json" in ".vscode" folder
+
+## Source
+- C.gitignore
+  - https://github.com/github/gitignore/blob/main/C.gitignore
