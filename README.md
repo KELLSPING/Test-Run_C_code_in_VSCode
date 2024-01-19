@@ -55,6 +55,19 @@
 
 2. Run Code (Code Runner)
     - Need to add "settings.json" in ".vscode" folder
+    - Multiple ".c" files in different path.
+        ```json
+        {
+            "code-runner.executorMap": {
+                /* default */
+                // "c": "cd $dir && gcc $fileName -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+
+                /* Use Code Runner run multiple ".c" files in different path */
+                "c": "cd $dir && gcc *.c ./src/*.c -o $fileNameWithoutExt && $dir$fileNameWithoutExt",
+                
+            }
+        }
+        ```
 
 ## Source
 - C.gitignore
