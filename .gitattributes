@@ -1,1 +1,1 @@
-*.json linguist-language=JavaScript
+.\\.vscode\\*.json linguist-language=JavaScript
